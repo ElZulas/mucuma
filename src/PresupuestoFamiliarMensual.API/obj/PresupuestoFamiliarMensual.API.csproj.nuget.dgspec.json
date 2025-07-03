@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.API\\PresupuestoFamiliarMensual.API.csproj": {}
+    "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.API\\PresupuestoFamiliarMensual.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.API\\PresupuestoFamiliarMensual.API.csproj": {
+    "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.API\\PresupuestoFamiliarMensual.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.API\\PresupuestoFamiliarMensual.API.csproj",
+        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.API\\PresupuestoFamiliarMensual.API.csproj",
         "projectName": "PresupuestoFamiliarMensual.API",
-        "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.API\\PresupuestoFamiliarMensual.API.csproj",
+        "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.API\\PresupuestoFamiliarMensual.API.csproj",
         "packagesPath": "C:\\Users\\mufas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.API\\obj\\",
+        "outputPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mufas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,14 +26,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj": {
-                "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj"
+              "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj": {
+                "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj"
               },
-              "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
-                "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj"
+              "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
+                "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj"
               },
-              "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj"
+              "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj"
               }
             }
           }
@@ -77,7 +77,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[9.0.1, )"
             }
           },
           "imports": [
@@ -103,14 +103,14 @@
         }
       }
     },
-    "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj": {
+    "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj",
+        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj",
         "projectName": "PresupuestoFamiliarMensual.Application",
-        "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj",
+        "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Application\\PresupuestoFamiliarMensual.Application.csproj",
         "packagesPath": "C:\\Users\\mufas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Application\\obj\\",
+        "outputPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mufas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -125,8 +125,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
-                "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj"
+              "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
+                "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj"
               }
             }
           }
@@ -181,14 +181,14 @@
         }
       }
     },
-    "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
+    "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj",
+        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj",
         "projectName": "PresupuestoFamiliarMensual.Core",
-        "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj",
+        "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj",
         "packagesPath": "C:\\Users\\mufas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\obj\\",
+        "outputPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mufas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -247,14 +247,14 @@
         }
       }
     },
-    "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj": {
+    "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
         "projectName": "PresupuestoFamiliarMensual.Infrastructure",
-        "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mufas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mufas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -269,8 +269,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
-                "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj"
+              "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
+                "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj"
               }
             }
           }

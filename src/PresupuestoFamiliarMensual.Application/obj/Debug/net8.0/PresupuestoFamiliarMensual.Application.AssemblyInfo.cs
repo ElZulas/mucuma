@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PresupuestoFamiliarMensual.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10b2be2a32a2fb8245cebdbaa7362be9aa31199f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+788ffe1b5f6ea5c868d8803117255a16b1c83557")]
 [assembly: System.Reflection.AssemblyProductAttribute("PresupuestoFamiliarMensual.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PresupuestoFamiliarMensual.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

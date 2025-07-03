@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj": {}
+    "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
+    "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj",
+        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj",
         "projectName": "PresupuestoFamiliarMensual.Core",
-        "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj",
+        "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj",
         "packagesPath": "C:\\Users\\mufas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\obj\\",
+        "outputPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mufas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj": {
+    "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
         "projectName": "PresupuestoFamiliarMensual.Infrastructure",
-        "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mufas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mufas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -92,8 +92,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
-                "projectPath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj"
+              "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj": {
+                "projectPath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Core\\PresupuestoFamiliarMensual.Core.csproj"
               }
             }
           }

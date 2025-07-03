@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tE+QvuiBJqQ=",
+  "dgSpecHash": "i8O72vi/z6o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mufas\\Desktop\\Examen\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\mufas\\Desktop\\greg\\src\\PresupuestoFamiliarMensual.Infrastructure\\PresupuestoFamiliarMensual.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mufas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mufas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

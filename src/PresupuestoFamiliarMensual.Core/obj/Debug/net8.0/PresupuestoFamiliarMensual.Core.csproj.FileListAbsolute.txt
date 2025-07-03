@@ -10,3 +10,15 @@ C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8
 C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\refint\PresupuestoFamiliarMensual.Core.dll
 C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\PresupuestoFamiliarMensual.Core.pdb
 C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\ref\PresupuestoFamiliarMensual.Core.dll
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\bin\Debug\net8.0\PresupuestoFamiliarMensual.Core.deps.json
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\bin\Debug\net8.0\PresupuestoFamiliarMensual.Core.dll
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\bin\Debug\net8.0\PresupuestoFamiliarMensual.Core.pdb
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\PresupuestoFamiliarMensual.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\PresupuestoFamiliarMensual.Core.AssemblyInfoInputs.cache
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\PresupuestoFamiliarMensual.Core.AssemblyInfo.cs
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\PresupuestoFamiliarMensual.Core.csproj.CoreCompileInputs.cache
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\PresupuestoFamiliarMensual.Core.sourcelink.json
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\PresupuestoFamiliarMensual.Core.dll
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\refint\PresupuestoFamiliarMensual.Core.dll
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\PresupuestoFamiliarMensual.Core.pdb
+C:\Users\mufas\Desktop\greg\src\PresupuestoFamiliarMensual.Core\obj\Debug\net8.0\ref\PresupuestoFamiliarMensual.Core.dll
