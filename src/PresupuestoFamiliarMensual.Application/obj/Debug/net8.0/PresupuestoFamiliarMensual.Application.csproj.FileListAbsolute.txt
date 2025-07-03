@@ -1,0 +1,16 @@
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\bin\Debug\net8.0\PresupuestoFamiliarMensual.Application.deps.json
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\bin\Debug\net8.0\PresupuestoFamiliarMensual.Application.dll
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\bin\Debug\net8.0\PresupuestoFamiliarMensual.Application.pdb
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\bin\Debug\net8.0\PresupuestoFamiliarMensual.Core.dll
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\bin\Debug\net8.0\PresupuestoFamiliarMensual.Core.pdb
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\PresupuestoFamiliarMensual.Application.csproj.AssemblyReference.cache
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\PresupuestoFamiliarMensual.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\PresupuestoFamiliarMensual.Application.AssemblyInfoInputs.cache
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\PresupuestoFamiliarMensual.Application.AssemblyInfo.cs
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\PresupuestoFamiliarMensual.Application.csproj.CoreCompileInputs.cache
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\PresupuestoFamiliarMensual.Application.sourcelink.json
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\Presupue.E5709991.Up2Date
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\PresupuestoFamiliarMensual.Application.dll
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\refint\PresupuestoFamiliarMensual.Application.dll
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\PresupuestoFamiliarMensual.Application.pdb
+C:\Users\mufas\Desktop\Examen\src\PresupuestoFamiliarMensual.Application\obj\Debug\net8.0\ref\PresupuestoFamiliarMensual.Application.dll

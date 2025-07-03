@@ -1,0 +1,147 @@
+### Variables
+@baseUrl = https://localhost:7001
+@token = 
+
+### 1. REGISTRO DE USUARIO
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "Test123!"
+}
+
+### 2. LOGIN PARA OBTENER TOKEN
+# @name login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "Test123!"
+}
+
+### 3. GUARDAR TOKEN
+@token = {{login.response.body.token}}
+
+### 4. CREAR PRESUPUESTO PRIMERO
+POST {{baseUrl}}/api/budgets
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "month": 7,
+  "year": 2024,
+  "totalAmount": 5000.00
+}
+
+### 5. CREAR CATEGORÍA (usar el ID del presupuesto creado)
+POST {{baseUrl}}/api/categories
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Comida",
+  "limit": 1000.00,
+  "monthlyBudgetId": "{{budget_id}}"
+}
+
+### 5. OBTENER TODAS LAS CATEGORÍAS
+GET {{baseUrl}}/api/categories
+Authorization: Bearer {{token}}
+
+### 6. CREAR PRESUPUESTO MENSUAL
+POST {{baseUrl}}/api/budgets
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "month": 7,
+  "year": 2024,
+  "totalAmount": 5000.00
+}
+
+### 7. OBTENER TODOS LOS PRESUPUESTOS
+GET {{baseUrl}}/api/budgets
+Authorization: Bearer {{token}}
+
+### 8. CREAR CATEGORÍA DE PRESUPUESTO
+POST {{baseUrl}}/api/budgets/1/categories
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "categoryId": 1,
+  "allocatedAmount": 1000.00
+}
+
+### 9. OBTENER CATEGORÍAS DE PRESUPUESTO
+GET {{baseUrl}}/api/budgets/1/categories
+Authorization: Bearer {{token}}
+
+### 10. CREAR GASTO
+POST {{baseUrl}}/api/expenses
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "description": "Almuerzo",
+  "amount": 25.50,
+  "date": "2024-07-03",
+  "categoryId": 1,
+  "budgetId": 1
+}
+
+### 11. OBTENER TODOS LOS GASTOS
+GET {{baseUrl}}/api/expenses
+Authorization: Bearer {{token}}
+
+### 12. OBTENER GASTO POR ID
+GET {{baseUrl}}/api/expenses/1
+Authorization: Bearer {{token}}
+
+### 13. ACTUALIZAR GASTO
+PUT {{baseUrl}}/api/expenses/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "description": "Almuerzo actualizado",
+  "amount": 30.00,
+  "date": "2024-07-03",
+  "categoryId": 1,
+  "budgetId": 1
+}
+
+### 14. ELIMINAR GASTO
+DELETE {{baseUrl}}/api/expenses/1
+Authorization: Bearer {{token}}
+
+### 15. ACTUALIZAR CATEGORÍA
+PUT {{baseUrl}}/api/categories/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Alimentación",
+  "description": "Gastos en comida y bebidas"
+}
+
+### 16. ELIMINAR CATEGORÍA
+DELETE {{baseUrl}}/api/categories/1
+Authorization: Bearer {{token}}
+
+### 17. ACTUALIZAR PRESUPUESTO
+PUT {{baseUrl}}/api/budgets/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "month": 7,
+  "year": 2024,
+  "totalAmount": 6000.00
+}
+
+### 18. ELIMINAR PRESUPUESTO
+DELETE {{baseUrl}}/api/budgets/1
+Authorization: Bearer {{token}} 
