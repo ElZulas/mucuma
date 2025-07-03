@@ -77,6 +77,7 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 // Habilitar Swagger en desarrollo y producción para facilitar las pruebas
+app.UseStaticFiles();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
