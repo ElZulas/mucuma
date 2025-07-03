@@ -1,0 +1,213 @@
+@PracticaAPI_HostAddress = http://localhost:5268
+
+GET {{PracticaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+### Variables de entorno
+@baseUrl = http://localhost:7001
+@token = {{login.response.body.token}}
+
+### 0. Probar endpoints de IP (sin autenticación)
+# @name testIp
+GET {{baseUrl}}/api/test/ip
+
+### 0.1. Verificar estado de la API
+# @name testStatus
+GET {{baseUrl}}/api/test/status
+
+### 0.2. Probar filtro de IP específicamente
+# @name testIpFilter
+GET {{baseUrl}}/api/test/ip-test
+
+### 0.3. Debug detallado de detección de IP
+# @name debugIp
+GET {{baseUrl}}/api/test/debug-ip
+
+### 1. Registro de usuario
+# @name register
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "password": "Test123!",
+    "email": "test@example.com"
+}
+
+### 2. Login de usuario
+# @name login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "password": "Test123!"
+}
+
+### 3. Crear presupuesto mensual
+# @name createBudget
+POST {{baseUrl}}/api/budgets
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "month": "2024-01-01",
+    "categories": [
+        {
+            "name": "Comida",
+            "limit": 500.00
+        },
+        {
+            "name": "Transporte",
+            "limit": 200.00
+        },
+        {
+            "name": "Entretenimiento",
+            "limit": 100.00
+        }
+    ]
+}
+
+### 4. Obtener todos los presupuestos
+GET {{baseUrl}}/api/budgets
+Authorization: Bearer {{token}}
+
+### 5. Obtener presupuesto específico
+GET {{baseUrl}}/api/budgets/{{createBudget.response.body.id}}
+Authorization: Bearer {{token}}
+
+### 6. Actualizar presupuesto
+PUT {{baseUrl}}/api/budgets/{{createBudget.response.body.id}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "month": "2024-02-01"
+}
+
+### 7. Obtener categorías de un presupuesto
+GET {{baseUrl}}/api/categories?budgetId={{createBudget.response.body.id}}&page=1&pageSize=10
+Authorization: Bearer {{token}}
+
+### 8. Obtener categoría específica
+GET {{baseUrl}}/api/categories/{{createBudget.response.body.categories[0].id}}
+Authorization: Bearer {{token}}
+
+### 9. Crear nueva categoría
+POST {{baseUrl}}/api/categories
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "Salud",
+    "limit": 300.00,
+    "monthlyBudgetId": "{{createBudget.response.body.id}}"
+}
+
+### 10. Actualizar categoría
+PUT {{baseUrl}}/api/categories/{{createBudget.response.body.categories[0].id}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "Comida y Bebidas",
+    "limit": 600.00
+}
+
+### 11. Crear gasto
+POST {{baseUrl}}/api/expenses
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "amount": 50.00,
+    "date": "2024-01-15",
+    "categoryId": "{{createBudget.response.body.categories[0].id}}"
+}
+
+### 12. Obtener gastos de una categoría
+GET {{baseUrl}}/api/expenses?categoryId={{createBudget.response.body.categories[0].id}}&page=1&pageSize=10
+Authorization: Bearer {{token}}
+
+### 13. Obtener gasto específico
+GET {{baseUrl}}/api/expenses/{{createExpense.response.body.id}}
+Authorization: Bearer {{token}}
+
+### 14. Actualizar gasto
+PUT {{baseUrl}}/api/expenses/{{createExpense.response.body.id}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "amount": 75.00,
+    "date": "2024-01-16"
+}
+
+### 15. Eliminar gasto
+DELETE {{baseUrl}}/api/expenses/{{createExpense.response.body.id}}
+Authorization: Bearer {{token}}
+
+### 16. Eliminar categoría
+DELETE {{baseUrl}}/api/categories/{{createBudget.response.body.categories[0].id}}
+Authorization: Bearer {{token}}
+
+### 17. Eliminar presupuesto
+DELETE {{baseUrl}}/api/budgets/{{createBudget.response.body.id}}
+Authorization: Bearer {{token}}
+
+### 18. Agregar gasto a través del endpoint de presupuestos
+POST {{baseUrl}}/api/budgets/{{createBudget.response.body.id}}/expenses
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "amount": 25.00,
+    "date": "2024-01-10",
+    "categoryId": "{{createBudget.response.body.categories[1].id}}"
+}
+
+### 19. Verificar presupuesto después de agregar gastos
+GET {{baseUrl}}/api/budgets/{{createBudget.response.body.id}}
+Authorization: Bearer {{token}}
+
+### 20. Probar validaciones - Crear gasto que excede límite
+POST {{baseUrl}}/api/expenses
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "amount": 1000.00,
+    "date": "2024-01-20",
+    "categoryId": "{{createBudget.response.body.categories[1].id}}"
+}
+
+### 21. Probar validaciones - Crear categoría duplicada
+POST {{baseUrl}}/api/categories
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "Comida",
+    "limit": 400.00,
+    "monthlyBudgetId": "{{createBudget.response.body.id}}"
+}
+
+### 22. Probar validaciones - Eliminar categoría con gastos
+DELETE {{baseUrl}}/api/categories/{{createBudget.response.body.categories[1].id}}
+Authorization: Bearer {{token}}
+
+### 23. Probar validaciones - Eliminar presupuesto con gastos
+DELETE {{baseUrl}}/api/budgets/{{createBudget.response.body.id}}
+Authorization: Bearer {{token}}
+
+### 24. Nota importante sobre filtro de IP
+# ⚠️ IMPORTANTE: Esta API solo permite acceso desde la IP 187.155.101.200
+# Si estás probando desde otra IP, recibirás error 403 Forbidden
+# Los endpoints /api/auth/* y /api/test/* están exentos del filtro de IP
+# 
+# Para probar el filtro:
+# 1. Desde la IP autorizada (187.155.101.200): Todos los endpoints funcionan
+# 2. Desde otra IP: Solo /api/auth/* y /api/test/* son accesibles
+# 3. Los endpoints CRUD requieren tanto IP autorizada como token válido
+
+###
