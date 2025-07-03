@@ -1,0 +1,249 @@
+# PracticaAPI - Sistema de Gestión de Presupuestos
+# Archivo de Prompts y Comandos Útiles
+
+## 📋 DESCRIPCIÓN DEL PROYECTO
+API REST para gestión de presupuestos mensuales con categorías y gastos.
+- .NET 8.0
+- Entity Framework Core
+- SQL Server (Somee.com)
+- Swagger/OpenAPI
+
+## 🏗️ ESTRUCTURA DEL PROYECTO
+```
+PracticaAPI/
+├── Controllers/          # Controladores de la API
+│   ├── BudgetsController.cs
+│   ├── CategoriesController.cs
+│   └── ExpensesController.cs
+├── Core/                 # Lógica de negocio
+│   └── Entities/
+│       ├── MonthlyBudget.cs
+│       ├── BudgetCategory.cs
+│       ├── Expense.cs
+│       └── Services/
+│           ├── BudgetService.cs
+│           └── Interfaces/
+│               └── IBudgetService.cs
+├── Data/                 # Capa de datos
+│   └── AppDbContext.cs
+├── DTOs/                 # Objetos de transferencia
+│   ├── BudgetDto.cs
+│   ├── BudgetDetailDto.cs
+│   ├── BudgetCategoryDto.cs
+│   ├── CreateBudgetDto.cs
+│   ├── CreateCategoryDto.cs
+│   ├── CreateExpenseDto.cs
+│   ├── ExpenseDto.cs
+│   ├── UpdateCategoryDto.cs
+│   └── UpdateExpenseDto.cs
+└── Properties/
+    └── launchSettings.json
+```
+
+## 🚀 COMANDOS IMPORTANTES
+
+### Compilación y Ejecución
+```bash
+# Restaurar paquetes
+dotnet restore
+
+# Compilar proyecto
+dotnet build
+
+# Ejecutar en desarrollo
+dotnet run
+
+# Ejecutar en producción
+dotnet run --environment Production
+```
+
+### Entity Framework
+```bash
+# Instalar herramientas EF (si no están instaladas)
+dotnet tool install --global dotnet-ef
+
+# Crear migración inicial
+dotnet ef migrations add InitialCreate
+
+# Aplicar migraciones a la base de datos
+dotnet ef database update
+
+# Ver migraciones pendientes
+dotnet ef migrations list
+
+# Revertir última migración
+dotnet ef database update PreviousMigrationName
+```
+
+### Git
+```bash
+# Ver estado
+git status
+
+# Agregar cambios
+git add .
+
+# Hacer commit
+git commit -m "Descripción del cambio"
+
+# Subir a GitHub
+git push
+
+# Ver historial
+git log --oneline
+```
+
+## 📡 ENDPOINTS DE LA API
+
+### Presupuestos (/api/budgets)
+- GET /api/budgets - Obtener todos los presupuestos
+- GET /api/budgets/{id} - Obtener presupuesto por ID
+- POST /api/budgets - Crear nuevo presupuesto
+- POST /api/budgets/{budgetId}/expenses - Agregar gasto a presupuesto
+- DELETE /api/budgets/{id} - Eliminar presupuesto
+
+### Categorías (/api/categories)
+- GET /api/categories - Obtener todas las categorías
+- GET /api/categories/{id} - Obtener categoría por ID
+- GET /api/categories/budget/{budgetId} - Obtener categorías por presupuesto
+- POST /api/categories - Crear nueva categoría
+- PUT /api/categories/{id} - Actualizar categoría
+- DELETE /api/categories/{id} - Eliminar categoría
+
+### Gastos (/api/expenses)
+- GET /api/expenses - Obtener todos los gastos
+- GET /api/expenses/{id} - Obtener gasto por ID
+- GET /api/expenses/category/{categoryId} - Obtener gastos por categoría
+- POST /api/expenses - Crear nuevo gasto
+- PUT /api/expenses/{id} - Actualizar gasto
+- DELETE /api/expenses/{id} - Eliminar gasto
+
+## 🔧 CONFIGURACIÓN
+
+### Seguridad
+- **Autenticación**: JWT Bearer Token
+- **Autorización**: Requerida para todos los endpoints CRUD
+- **CORS**: Configurado para permitir peticiones cross-origin
+- **Filtro de IP**: Solo permite acceso desde 187.155.101.200
+
+### Base de Datos
+- **Tipo**: InMemory Database (para desarrollo)
+- **Nombre**: PracticaAPIDb
+
+### Swagger UI
+- **URL**: https://localhost:7000/swagger
+- **URL alternativa**: http://localhost:5000/swagger
+
+### Endpoints de Prueba
+- **GET** `/api/test/status` - Estado de la API con información de IP
+- **GET** `/api/test/ip` - Verificar IP del cliente
+- **GET** `/api/test/ip-test` - Probar filtro de IP específicamente
+- **GET** `/api/test/auth-test` - Probar autenticación (requiere token)
+
+### 🔐 Autenticación JWT
+
+#### 1. Registro de usuario:
+```bash
+POST /api/auth/register
+Content-Type: application/json
+
+{
+  "username": "tu_usuario",
+  "password": "tu_contraseña",
+  "confirmPassword": "tu_contraseña"
+}
+```
+
+#### 2. Login para obtener token:
+```bash
+POST /api/auth/login
+Content-Type: application/json
+
+{
+  "username": "tu_usuario",
+  "password": "tu_contraseña"
+}
+```
+
+#### 3. Usar el token en las peticiones:
+```bash
+GET /api/budgets
+Authorization: Bearer tu_token_aqui
+```
+
+### ⚠️ Notas importantes:
+- **Todos los endpoints CRUD requieren autenticación** (excepto `/api/auth/*` y `/api/test/*`)
+- **Solo la IP `187.155.101.200` puede acceder** a la API
+- **El token expira en 7 días**
+- **Error 401**: Token inválido o faltante
+- **Error 403**: IP no autorizada
+
+## 📝 EJEMPLOS DE USO
+
+### Crear un presupuesto
+```json
+POST /api/budgets
+{
+  "month": "2024-01-01T00:00:00Z",
+  "categories": [
+    {
+      "name": "Comida",
+      "limit": 500.00
+    },
+    {
+      "name": "Transporte",
+      "limit": 200.00
+    }
+  ]
+}
+```
+
+### Crear una categoría
+```json
+POST /api/categories
+{
+  "name": "Entretenimiento",
+  "limit": 150.00,
+  "monthlyBudgetId": "guid-del-presupuesto"
+}
+```
+
+### Registrar un gasto
+```json
+POST /api/expenses
+{
+  "amount": 25.50,
+  "categoryId": "guid-de-la-categoria"
+}
+```
+
+## 🐛 SOLUCIÓN DE PROBLEMAS
+
+### Error de compilación
+1. Verificar que todos los paquetes NuGet estén instalados
+2. Ejecutar `dotnet restore --force`
+3. Limpiar y reconstruir: `dotnet clean && dotnet build`
+
+### Error de conexión a base de datos
+1. Verificar la cadena de conexión en appsettings.json
+2. Asegurar que las migraciones estén aplicadas
+3. Verificar conectividad a internet
+
+### Error de Entity Framework
+1. Verificar que las herramientas EF estén instaladas
+2. Ejecutar `dotnet ef database update`
+3. Verificar que el DbContext esté configurado correctamente
+
+## 📚 RECURSOS ÚTILES
+- [Documentación .NET 8](https://docs.microsoft.com/en-us/dotnet/)
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
+- [ASP.NET Core Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/)
+- [Swagger/OpenAPI](https://swagger.io/docs/)
+
+## 🔄 FLUJO DE DESARROLLO
+1. Hacer cambios en el código
+2. Compilar con `dotnet build`
+3. Probar endpoints con Swagger
+4. Crear migraciones si hay cambios en el modelo
+5. Aplicar migraciones a la base de datos
+6. Hacer commit y push a GitHub 
